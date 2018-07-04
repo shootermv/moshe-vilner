@@ -14,13 +14,20 @@ class LikeButton extends React.Component {
       // return 'You liked this.';
     }
 
-    return e(
+    /*return e(
       'i',
       { onClick: () => this.setState({ liked: true }), className:'fa fa-linkedin' },
       ''
+    );*/
+
+    return (
+      <i onClick={() => this.setState({ liked: true })} className='fa fa-linkedin'>      
+      </i>
     );
   }
 }
 
 const domContainer = document.querySelector('.social.list-inline li:nth-child(1) a');
-ReactDOM.render(e(LikeButton), domContainer);
+// ReactDOM.render(e(LikeButton), domContainer);
+
+ReactDOM.render(<LikeButton/>, domContainer);
