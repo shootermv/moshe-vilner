@@ -1,5 +1,5 @@
 'use strict';
-
+// IN button
 const e = React.createElement;
 
 class InButton extends React.Component {
@@ -19,7 +19,41 @@ class InButton extends React.Component {
   }
 }
 
-const domContainer = document.querySelector('.social.list-inline li:nth-child(1) a');
+ReactDOM.render(<InButton/>, document.querySelector('.social.list-inline li:nth-child(1) a'));
 
+// SKILLS
 
-ReactDOM.render(<InButton/>, domContainer);
+class Skills extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      skills: [ 
+      'HTML5',
+      'CSS3',
+      'SASS',
+      'LESS',
+      'Git',                    
+      'AngularJS',
+      'Angular',
+      'Nodejs',
+      'React',
+      'Vue.js',
+      'slim.js',
+      'English',
+      'Russian' 
+      ] 
+    };
+  }
+
+  render() {
+    return (
+      <div> 
+      {this.state.skills.map((skill) => (<span className='skill-tag'>{skill}</span>))}
+      </div>     
+    );
+  }
+}
+
+ReactDOM.render(<Skills/>, document.querySelector('.misc-skills'));
+
+// SKILLS
