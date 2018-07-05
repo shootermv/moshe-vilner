@@ -2,7 +2,7 @@
 
 const e = React.createElement;
 
-class LikeButton extends React.Component {
+class InButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = { liked: false };
@@ -10,24 +10,16 @@ class LikeButton extends React.Component {
 
   render() {
     if (this.state.liked) {
-        console.log('you pressed "IN"')
-      // return 'You liked this.';
+        console.log('you pressed "IN"');
     }
 
-    /*return e(
-      'i',
-      { onClick: () => this.setState({ liked: true }), className:'fa fa-linkedin' },
-      ''
-    );*/
-
     return (
-      <i onClick={() => this.setState({ liked: true })} className='fa fa-linkedin'>      
-      </i>
+      <i onClick={() => this.setState({ liked: true })} className='fa fa-linkedin'/>      
     );
   }
 }
 
 const domContainer = document.querySelector('.social.list-inline li:nth-child(1) a');
-// ReactDOM.render(e(LikeButton), domContainer);
 
-ReactDOM.render(<LikeButton/>, domContainer);
+
+ReactDOM.render(<InButton/>, domContainer);
