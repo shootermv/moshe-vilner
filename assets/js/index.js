@@ -48,7 +48,7 @@ class Skills extends React.Component {
   render() {
     return (
       <div> 
-      {this.state.skills.map((skill) => (<span className='skill-tag'>{skill}</span>))}
+      {this.state.skills.map((skill) => (<span key={skill} className='skill-tag'>{skill}</span>))}
       </div>     
     );
   }
