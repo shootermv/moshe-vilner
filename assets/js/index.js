@@ -38,8 +38,9 @@ class Skills extends React.Component {
       'Nodejs',
       'React',
       'Vue.js',
-      'slim.js',
+      'Redux.js',
       'English',
+      'Hebrew', 
       'Russian' 
       ] 
     };
