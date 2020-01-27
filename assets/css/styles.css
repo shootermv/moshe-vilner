@@ -182,6 +182,10 @@ a.btn:hover {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.header .profile a {
+  color: #6ae438
+}
 .header .contact-info {
   background: #008fa1;
   padding-top: 30px;
