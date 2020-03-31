@@ -1,2 +1,2 @@
 my online resume
-[link](https://github.shootermv/moshe-vilner) to demo
+[link to demo](https://shootermv.github.io/moshe-vilner/) 
